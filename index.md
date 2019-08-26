@@ -1,12 +1,10 @@
 ---
 # I guess I have to do this?
 layout: default
+#title: Rob Keleher!!!
 ---
 
-# ![Triforce Logo](https://avatars2.githubusercontent.com/u/8162501?s=48) Rob Keleher ([@tryforceful](http://www.github.com/tryforceful))
-![Cover image: Rob Keleher]({{ 'assets/images/cover.jpg' | relative_url }})
-
-## :small_red_triangle: GitHub Projects
+## <span class="github-icon">![GitHub]({{'assets/images/blacktocat.png' | relative_url }})</span> GitHub Projects
 
 ### [WaniKani Enhanced Mobile CSS (Userscript)](https://gist.github.com/tryforceful/ff2c36baddf2a5029aa1cf03215d7880#file-tryf-wk-enhnaced-mobile-css-userscript-js)
 Overwrites existing mobile viewport stylings of [wanikani.com](http://www.wanikani.com) in review and lesson mode, making the site more mobile-friendly.
