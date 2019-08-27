@@ -1,0 +1,22 @@
+$background_black: #373737;
+$lightblue: #0090ff;//rgb(76, 218, 243);
+
+$background_gray: #f2f2f2;
+
+
+@mixin vertical-align ($position: relative) {
+	position: $position;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+@mixin box-shadow ($string) {
+	-webkit-box-shadow: $string;
+	-moz-box-shadow:         $string;
+    -o-box-shadow:         $string;
+	-ms-box-shadow:    $string;
+    box-shadow:         $string;
+}

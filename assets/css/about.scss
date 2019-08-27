@@ -1,0 +1,17 @@
+---
+---
+
+.interests {
+    list-style-type: none;
+    li {
+        margin-bottom: 5px;
+    }
+    .emoji {
+        vertical-align: sub;
+        margin-right: 10px;
+        @media (min-width: 768px) {
+            height: 30px;
+            width: 30px;
+        }
+    }
+}

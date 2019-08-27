@@ -1,0 +1,12 @@
+- name: Bloomberg LP
+  logo_url: bloomberg-logo.jpg
+  url: http://www.bloomberg.com/
+  bg_color: '#fff'
+- name: JET Program
+  logo_url: JET_program-logo.png
+  url: http://jetprogramusa.org/
+  bg_color: rgb(208, 234, 255) #'rgb(230, 240, 240)'
+- name: Think It First
+  logo_url: tif-logo.png
+  url: http://www.thinkitfirst.com/
+  bg_color: '#373737'

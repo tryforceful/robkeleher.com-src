@@ -9,9 +9,11 @@ gem "jekyll"
 gem "jekyll-theme-slate"
 gem "jemoji"
 
+gem "github-pages", group: :jeykll_plugins
+
 group :jekyll_plugins do
     gem 'jekyll-sitemap'
-    gem 'jekyll-feed'
+    #gem 'jekyll-feed'
     gem 'jekyll-seo-tag'
     gem 'jekyll-bootstrap-sass'
 end

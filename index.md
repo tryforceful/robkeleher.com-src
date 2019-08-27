@@ -1,19 +1,38 @@
 ---
-# I guess I have to do this?
 layout: default
-#title: Rob Keleher!!!
+title: About Me
+sass_file: about
 ---
+# Hello, World! I'm Rob.
 
-## <span class="github-icon">![GitHub]({{'assets/images/blacktocat.png' | relative_url }})</span> GitHub Projects
+I'm a doo-dad and a thinger and this is the blurb where I talk about what I'm passionate about, like frontend web apps, design and interactivity. Except this website doesn't show that does it. Idk. Maybe it does!
 
-### [WaniKani Enhanced Mobile CSS (Userscript)](https://gist.github.com/tryforceful/ff2c36baddf2a5029aa1cf03215d7880#file-tryf-wk-enhnaced-mobile-css-userscript-js)
-Overwrites existing mobile viewport stylings of [wanikani.com](http://www.wanikani.com) in review and lesson mode, making the site more mobile-friendly.
+Check out some of my [projects]({% link projects.md %}) on GitHub.
 
-### [WaniKani Clickable/Popover Study Assistant (Userscript)](https://gist.github.com/tryforceful/5a2682f76b359ba283913eaebe34f8e6)
-On WaniKani reviews and lessons, shows reading & translation info in a popover when hovering over quiz kanji/vocab words. Also provides a clickable link to [jisho.org](http://www.jisho.org) for the relevant quiz item.
+<div>
+    <section>
+        <img class="img-responsive" src="assets/images/cover.jpg"/>
+    </section>
+</div>
 
-### [WaniKani Audio for Japanese Example Sentences (Userscript)](https://gist.github.com/tryforceful/e7c44b2e715ae3e7679b7e108d84d2b0)
-Adds audio talkback support in male and female Japanese voices to example sentences on WaniKani lessons and reviews.
 
-### [WaniKani Kanji Recognition Study Tool](https://github.com/tryforceful/wk-kanji) (_incomplete_)
-A tool based on WaniKani to help you practice recognizing kanji visually.
+<div class="row">
+<div class="col-xs-6 p-2">
+
+<h2>My Interests</h2>
+<ul class="interests col-md-offset-1">
+    <li>:computer: Programming</li>
+    <li>:microphone: Singing</li>
+    <li>:bicyclist: Cycling</li>
+    <li>:jp: Japan</li>
+    <li>:video_game: The Legend of Zelda!</li>
+</ul>
+
+</div>
+<div class="col-xs-6">
+
+<h2>Work Experience</h2>
+
+{% include company_logos.html classes="col-xs-12" %}
+</div>
+</div>
