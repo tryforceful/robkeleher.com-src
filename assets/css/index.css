@@ -1,0 +1,12 @@
+footer .footer_copyright {
+  display: inline-block; }
+
+.github-icon img {
+  padding: 5px;
+  margin: 0;
+  background-color: #373737;
+  vertical-align: text-bottom; }
+
+.label {
+  font-size: 60%;
+  vertical-align: middle; }
