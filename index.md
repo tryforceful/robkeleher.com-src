@@ -1,7 +1,7 @@
 ---
 layout: default
-title: About Me
-sass_file: about
+title: Home
+sass_file: home
 ---
 # Hello, World! I'm Rob.
 

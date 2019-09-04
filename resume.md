@@ -1,9 +1,10 @@
 ---
-
+title: Résumé
 ---
 
-# Résumé: Coming Soon!
+# Résumé
 
+<p class="text-danger">Coming Soon</p>
 
 ### Work Experience
 

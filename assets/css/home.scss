@@ -5,9 +5,12 @@
     list-style-type: none;
     li {
         margin-bottom: 5px;
+        @media (min-width: 992px){
+            font-size: 120%;
+        }
     }
     .emoji {
-        vertical-align: sub;
+        vertical-align: text-bottom;
         margin-right: 10px;
         @media (min-width: 768px) {
             height: 30px;

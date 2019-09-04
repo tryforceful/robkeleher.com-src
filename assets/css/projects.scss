@@ -18,3 +18,9 @@ footer {
     font-size: 60%;
     vertical-align: middle;
 }
+
+#main_content {
+    h3:not(:first-of-type) {
+        margin-top: 50px;
+    }
+}
