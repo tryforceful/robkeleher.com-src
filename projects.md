@@ -5,7 +5,8 @@ sass_file: projects
 title: Projects
 ---
 
-## <span class="github-icon img-rounded"><img class="img-rounded" alt="GitHub" src="assets/images/blacktocat.png"/></span> GitHub Projects
+## <span class="github-icon img-rounded"><img class="img-rounded" alt="GitHub" src="assets/images/blacktocat.png"/></span> Projects
+> See more of my work on <a href="http://www.github.com/tryforceful">GitHub</a>.
 
 ### [WaniKani Enhanced Mobile Design](https://gist.github.com/tryforceful/ff2c36baddf2a5029aa1cf03215d7880#file-tryf-wk-enhnaced-mobile-css-userscript-js) {% include userscript.html %}
 Overwrites existing mobile viewport CSS stylings of [wanikani.com](http://www.wanikani.com) in review and lesson mode, making the site more mobile-friendly.
@@ -22,5 +23,7 @@ Adds audio talkback support in male and female Japanese voices to example senten
 
 <img class="col-md-offset-1 img-responsive" src="assets/images/wk/wk_audio.png">
 
+<!--
 ### WaniKani Kanji Recognition Study Tool <span class="label label-default">Incomplete</span>
 A tool based on WaniKani to help you practice recognizing kanji visually.
+-->

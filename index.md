@@ -5,9 +5,9 @@ sass_file: home
 ---
 # Hello, World! I'm Rob.
 
-I'm a doo-dad and a thinger and this is the blurb where I talk about what I'm passionate about, like frontend web apps, design and interactivity. Except this website doesn't show that does it. Idk. Maybe it does!
+I am a senior Software and Web Developer with experience in frontend & full-stack development, project leadership and team leadership in the software industry. I have been responsible for critical products that have enhanced the experiences of tens of thousands of users. I have worked in team environments both large and small, for companies from a dozen to thousands of employees, following Agile/scrum development principles as a certified Scrummaster. I strive to find and effect elegant solutions to technical problems as both a developer and a leader. I am also Passionate about Japanese language, culture, and foreign exchange with 2 years of experience living and working in Japan as an English teacher.
 
-Check out some of my [projects]({% link projects.md %}) on GitHub.
+Check out some of my [projects]({% link projects.md %}) on GitHub or my [résumé]({% link resume.md %}).
 
 <div>
     <section>

@@ -1,5 +1,15 @@
 @import '_variables';
 
+$font-family-sans: 'Source Sans Pro', sans-serif;
+$font-family-mono: 'Source Code Pro', monospace;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-mono;
+}
+body, p { 
+  font-family: $font-family-sans;
+}
+
 .inner {
   @media (min-width: 992px) {
     max-width: 840px;
@@ -102,4 +112,14 @@ footer {
   z-index: 10;
 
   @include box-shadow(none);
+}
+
+#linkedin_container {
+  img { 
+    box-shadow: initial;
+    -webkit-box-shadow:initial;
+    -moz-box-shadow:initial;
+    -o-box-shadow:initial;
+    -ms-box-shadow:initial;
+  }
 }

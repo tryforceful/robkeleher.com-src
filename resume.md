@@ -4,7 +4,8 @@ title: Résumé
 
 # Résumé
 
-<p class="text-danger">Coming Soon</p>
+- [English]( assets/docs/Resume__Rob_Keleher.pdf )
+- [日本語]( assets/docs/ケレハー・ロバート履歴書.pdf )
 
 ### Work Experience
 
