@@ -1,0 +1,69 @@
+
+@mixin fullscreen-width () {
+	width: 100vw;
+	position: relative;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	left: 50%;
+	right: 50%;
+}
+
+@mixin box-shadow ($string) {
+	-webkit-box-shadow: $string;
+	-moz-box-shadow:    $string;
+	box-shadow:         $string;
+}
+
+/*
+  This mixin can be used to set the object-fit:
+  @include object-fit(contain);
+  or object-fit and object-position:
+  @include object-fit(cover, top);
+*/
+@mixin object-fit($fit: fill, $position: null){
+  -o-object-fit: $fit;
+     object-fit: $fit;
+  @if $position {
+	  -o-object-position: $position;
+	     object-position: $position;
+  	font-family: 'object-fit: #{$fit}; object-position: #{$position}';
+  } @else {
+  	font-family: 'object-fit: #{$fit}';
+  }
+}
+
+@mixin vertical-align ($position: relative) {
+	position: $position;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+@mixin translateZ ($z: 0) {
+  -webkit-transform: translateZ($z);
+  -moz-transform: translateZ($z);
+  -ms-transform: translateZ($z);
+  transform: translateZ($z);
+}
+
+@mixin centerThis($position: absolute) {
+	position: $position;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, 0);
+	-moz-transform: translate(-50%, 0);
+	-ms-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+}
+
+
+@mixin centerThisX($position: absolute) {
+	position: $position;
+	left: 50%;
+	-webkit-transform: translate(-50%, 0);
+	-moz-transform: translate(-50%, 0);
+	-ms-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+}

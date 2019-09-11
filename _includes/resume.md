@@ -1,7 +1,3 @@
----
-title: Résumé
----
-
 # Résumé
 
 For my Japanese resume, please click below.<br>

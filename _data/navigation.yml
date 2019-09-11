@@ -1,8 +1,8 @@
 - name: Home
-  link: /
+  link: '#'
 - name: Projects
-  link: /projects.html
+  link: '#projects'
 - name: Résumé
-  link: /resume.html
+  link: '#resume'
 - name: Contact
-  link: /contact.html
+  link: '#contact'

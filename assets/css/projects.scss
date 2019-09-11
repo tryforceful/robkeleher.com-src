@@ -1,6 +1,22 @@
 ---
 ---
 
+#interests,
+#resume {
+    background-color: #aadaff;
+    color: #000 !important;
+
+    // &::before{
+    //     content: '';
+    //     width: 100%;
+    //     height: 100%;
+    //     padding-left: 100vw;
+    //     position: absolute;
+    //     @include centerThisX(absolute);
+    //     background-color: #aadaff;
+    // }
+}
+
 footer {
     .footer_copyright {
         display: inline-block;

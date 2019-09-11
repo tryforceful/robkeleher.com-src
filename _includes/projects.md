@@ -1,9 +1,10 @@
+<!--
 ---
-# I guess I have to do this?
 layout: default
 sass_file: projects
 title: Projects
 ---
+-->
 
 ## <span class="github-icon img-rounded"><img class="img-rounded" alt="GitHub" src="assets/images/blacktocat.png"/></span> Projects
 > See more of my work on <a href="http://www.github.com/tryforceful">GitHub</a>.

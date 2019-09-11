@@ -1,8 +1,3 @@
----
-layout: default
-title: Contact
----
-
 # Contact Me
 
 Email me at <a href="mailto:keleher.rob@gmail.com">keleher.rob@gmail.com</a>
