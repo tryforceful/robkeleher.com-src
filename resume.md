@@ -4,9 +4,10 @@ title: Résumé
 
 # Résumé
 
-- [English]( assets/docs/Resume__Rob_Keleher.pdf )
-- [日本語]( assets/docs/ケレハー・ロバート履歴書.pdf )
+For my Japanese resume, please click below.<br>
+[日本語で書いた履歴書はこちらです。]( assets/docs/ケレハー・ロバート履歴書.pdf )
 
-### Work Experience
+Download my English résumé [here]( assets/docs/Resume__Rob_Keleher.pdf ).
 
-{% include company_logos.html classes="col-xs-12 col-sm-6 col-md-4" %}
+<iframe src="http://docs.google.com/gview?url=http://www.tryforceful.com/assets/docs/Resume__Rob_Keleher.pdf&embedded=true" 
+style="width:800px; height:600px;" frameborder="0"></iframe>
