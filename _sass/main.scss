@@ -202,3 +202,7 @@ footer {
       margin-top: 50px;
   }
 }
+
+.pdf_iframe_container {
+  padding-top: 129.41%; // 8.5 x 11 US Letter ratio
+}

@@ -6,7 +6,7 @@ title: Projects
 ---
 -->
 
-## <span class="github-icon img-rounded"><img class="img-rounded" alt="GitHub" src="assets/images/blacktocat.png"/></span> Projects
+# <span class="github-icon img-rounded"><img class="img-rounded" alt="GitHub" src="assets/images/blacktocat.png"/></span> Projects
 > See more of my work on <a href="http://www.github.com/tryforceful">GitHub</a>.
 
 ### [WaniKani Enhanced Mobile Design](https://gist.github.com/tryforceful/ff2c36baddf2a5029aa1cf03215d7880#file-tryf-wk-enhnaced-mobile-css-userscript-js) {% include userscript.html %}
