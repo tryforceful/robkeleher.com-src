@@ -2,6 +2,7 @@
 layout: default
 title: Home
 sass_file: home
+canonical_url: http://www.robkeleher.com
 ---
 
 {% capture include__main %}

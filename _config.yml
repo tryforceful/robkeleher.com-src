@@ -19,6 +19,16 @@ defaults:
       layout: "default"
 
 title: Rob Keleher
+description: I am a senior software and web developer with experience in frontend & full-stack development, project leadership and team leadership, with a passion about Japanese language, culture, and foreign exchange and 2 years of experience living and working in Japan as an English teacher.
+url: http://www.robkeleher.com
+author: Rob Keleher
+logo: http://www.robkeleher.com/assets/images/cover.jpg
+social:
+  name: Rob Keleher
+  links:
+    - http://github.com/tryforceful
+    - http://linkedin.com/in/robert-keleher
+
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-slate
