@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Home
-sass_file: home
 canonical_url: http://www.robkeleher.com
 ---
 
@@ -19,28 +18,6 @@ Check out some of my [projects](#projects) on GitHub or my [résumé](#resume).
 </div>
 {% endcapture %}
 
-{% capture include__interests %}
-<div class="row">
-    <div class="col-xs-6 p-2">
-        <h2>My Interests</h2>
-        <ul class="interests col-md-offset-1">
-            <li>:computer: Programming</li>
-            <li>:microphone: Singing</li>
-            <li>:bicyclist: Cycling</li>
-            <li>:jp: Japan</li>
-            <li>:video_game: The Legend of Zelda!</li>
-        </ul>
-
-        </div>
-        <div class="col-xs-6">
-
-        <h2>Work Experience</h2>
-
-        {% include company_logos.html classes="col-xs-12" %}
-    </div>
-</div>
-{% endcapture %}
-
 <section id="main_content">
     <section id="main" class="outer">
         <div class="inner">
@@ -49,6 +26,7 @@ Check out some of my [projects](#projects) on GitHub or my [résumé](#resume).
     </section>
     <section id="interests" class="outer">
         <div class="inner">
+        {% capture include__interests %}{% include interests.md %}{% endcapture %}
         {{ include__interests | markdownify }}
         </div>
     </section>
