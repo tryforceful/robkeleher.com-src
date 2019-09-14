@@ -1,0 +1,1 @@
+git subtree push --prefix=_site _site gh-pages

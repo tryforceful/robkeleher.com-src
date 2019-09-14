@@ -17,32 +17,23 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <title>Rob Keleher</title>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+      crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/javascripts/main.js"></script>
+    <script type="text/javascript" src="assets/javascripts/bootstrap.4.3.1.min.js"></script>
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-  {%- seo title=false -%}
+    
+    <meta property="og:image" content="assets/images/cover.jpg" />
+    <meta property="og:type" content="website" />
+
+    {%- seo -%}
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#rknavigator" data-offset="40">
     <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" target="_blank" href="{{ site.data.main.github_url }}">{{ site.data.main.github_handle }}</a>
-          <img id="triforce_logo" src="assets/images/transparent_triforce_180_180.png"/>
-          
-
-          <h1 id="project_title">{{ site.data.main.title | default: site.github.repository_name }}</h1>
-          <h2 id="project_tagline">{{ site.data.main.description | default: site.github.project_tagline }}</h2>
-
-          {%- if site.show_downloads -%}
-            <section id="downloads">
-              <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
-            </section>
-          {%- endif -%}
-
-        </header>
-    </div>
-
+    {% include header.html %}
 
     {%- include navigation.html -%}
     <!-- MAIN CONTENT -->

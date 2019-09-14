@@ -1,6 +1,6 @@
 ---
 ---
-@import 'bootstrap';
-@import "{{ site.theme }}";
 
+@import "bootstrap/scss/bootstrap";
+@import "{{ site.theme }}";
 @import "main";

@@ -1,3 +1,18 @@
+@mixin animation2 ($string1, $string2) {
+	-webkit-animation: $string1, $string2;
+	-moz-animation: $string1, $string2;
+	-ms-animation: $string1, $string2;
+	-o-animation: $string1, $string2;
+	animation: $string1, $string2;
+}
+
+@mixin animation ($string1) {
+	-webkit-animation: $string1;
+	-moz-animation: $string1;
+	-ms-animation: $string1;
+	-o-animation: $string1;
+	animation: $string1;
+}
 
 @mixin fullscreen-width () {
 	width: 100vw;
@@ -11,6 +26,8 @@
 @mixin box-shadow ($string) {
 	-webkit-box-shadow: $string;
 	-moz-box-shadow:    $string;
+	-o-box-shadow:      $string;
+	-ms-box-shadow:     $string;
 	box-shadow:         $string;
 }
 

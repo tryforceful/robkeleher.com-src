@@ -7,16 +7,22 @@
   padding: 5px;
   margin: 10px 0 10px 0;
   border: 1px solid #ebebeb;
-  box-shadow: 0 0 5px #ebebeb;
-  -webkit-box-shadow: 0 0 5px #ebebeb;
+  @include box-shadow(0 0 5px #ebebeb);
 }
 
 img {
   padding: 0;
   margin: 0;
   border: 0;
+  @include box-shadow(none);
 }
 //////////////////////////////
+
+
+//needed for nav scrollspy
+body {
+  position: relative;
+}
 
 $font-family-sans: 'Source Sans Pro', sans-serif;
 $font-family-mono: 'Source Code Pro', monospace;
@@ -70,16 +76,32 @@ footer {
   }
 }
 
-.userscript_badge {
-  background-color: #f0a; //success
-  a, a:hover, a:visited {
+a.badge-dark.userscript_badge {
+  font-family: $font-family-sans;
+  background-color: #f0a;
+  &, &:hover, &:focus, &:visited {
     color: white;
+  }
+  &:hover, &:focus, &:visited {
+    background-color: #a0f;
   }
 }
 
 #main_content_wrap {
   border-top: 0;
 }
+
+@media (max-width: 768px)
+{
+  #main_content #main .inner {
+    padding-bottom: 0;
+  }
+  
+  #coverimage {
+    @include fullscreen-width();
+    margin-bottom: -6px;
+  }
+} 
 
 #navi {
   background-color: $lightblue;
@@ -91,14 +113,27 @@ footer {
   .navbar {
     margin-bottom: 0;
     border-bottom: 0;
+    padding: 0;
+
+    // .navbar-nav > li > a {
+    //   padding: 15px;
+    // }
+
+    // .navbar:before, .navbar:after {
+    //   display: table;
+    //   content: " "; }
+    // .navbar:after {
+    //   clear: both; }
+
     li {
       a {
         color: white;
-        font-weight: 600;
+        font-weight: 500;
+        font-family: $font-family-mono;
       }
 
       &.active,
-      &.active a,
+      a.active,
       a:hover,
       a:focus {
         color: $background_black;
@@ -111,12 +146,8 @@ footer {
       }
 
       &.active,
-      &.active a {
+      a.active {
         background-color: $background_gray;
-      }
-
-      @media (max-width: 767px) {
-        max-width: 33%;
       }
     }
   }
@@ -125,47 +156,39 @@ footer {
 #triforce_logo {
   display: block;
   position: absolute;
-  top: 77px;
+  top: 72px;
   right: -5px;
-  z-index: 10;
+  z-index: 1100;
 
   @include box-shadow(none);
 }
 
-#linkedin_container {
-  img { 
-    box-shadow: initial;
-    -webkit-box-shadow:initial;
-    -moz-box-shadow:initial;
-    -o-box-shadow:initial;
-    -ms-box-shadow:initial;
-  }
-}
-
-
 .interests {
   list-style-type: none;
+  max-width: 250px;
   li {
       margin-bottom: 5px;
-      @media (min-width: 992px){
-          font-size: 120%;
-      }
+      font-size: 120%;
   }
   .emoji {
       @include box-shadow(none);
       vertical-align: text-bottom;
       margin-right: 10px;
-      @media (min-width: 768px) {
-          height: 30px;
-          width: 30px;
-      }
+      height: 30px;
+      width: 30px;
   }
 }
 
+#interests
+{
+  background-color: #aadaff;//#c9c0fd;
+}
+#resume {
+  background-color: #aadaff;
+}
 
 #interests,
 #resume {
-  background-color: #aadaff;
   color: #000 !important;
 
   // &::before{
@@ -206,3 +229,85 @@ footer {
 .pdf_iframe_container {
   padding-top: 129.41%; // 8.5 x 11 US Letter ratio
 }
+
+#linkedin_container {
+  .LI-badge-container { 
+    background-color: white;
+  }
+  margin-top: 40px;
+  margin-bottom: 20px;
+  img { 
+    box-shadow: initial;
+    -webkit-box-shadow:initial;
+    -moz-box-shadow:initial;
+    -o-box-shadow:initial;
+    -ms-box-shadow:initial;
+  }
+}
+
+
+
+
+@keyframes typing { from { width: 0; } 52% {width: calc(21.25ch / 22 * 13); animation-timing-function: linear} 64% {width: calc(21.25ch / 22 * 13); animation-timing-function: steps(9,end);} to {width: calc(21.25ch);} }
+@keyframes blink-caret { 50% { border-color: transparent; } }
+
+#introtext { 
+	//font: bold 100% Consolas, Monaco, monospace;
+	border-right: .1em solid black;
+	//width: 16.1em;
+	width: calc(21.25ch);
+	white-space: nowrap;
+	overflow: hidden;
+  @include animation2 (typing 1.5s steps(13, end) 1s backwards, blink-caret .5s step-end infinite alternate);
+}
+
+// .blinking-cursor {
+//   font-weight: 100;
+//   vertical-align: text-bottom;
+//   @include animation(1s blink step-end infinite);
+// }
+
+// @keyframes "blink" {
+//   from, to {
+//     color: transparent;
+//   }
+//   50% {
+//     color: black;
+//   }
+// }
+
+// @-moz-keyframes blink {
+//   from, to {
+//     color: transparent;
+//   }
+//   50% {
+//     color: black;
+//   }
+// }
+
+// @-webkit-keyframes "blink" {
+//   from, to {
+//     color: transparent;
+//   }
+//   50% {
+//     color: black;
+//   }
+// }
+
+// @-ms-keyframes "blink" {
+//   from, to {
+//     color: transparent;
+//   }
+//   50% {
+//     color: black;
+//   }
+// }
+
+// @-o-keyframes "blink" {
+//   from, to {
+//     color: transparent;
+//   }
+//   50% {
+//     color: black;
+//   }
+// }

@@ -1,9 +1,9 @@
 # Résumé
 
-For my Japanese résumé, please click below.<br>
-[日本語で書いた履歴書はこちらです。]( assets/docs/ケレハー・ロバート履歴書.pdf )
+Please [contact me](#contact) if you wish to see my Japanese résumé.<br>
+日本語の履歴書については、[ご連絡して下さい](#contact)。
 
-Download my English résumé [here]( assets/docs/Resume__Rob_Keleher.pdf ).
+Download my English résumé [:arrow_down: here]( assets/docs/Resume__Rob_Keleher.pdf ).
 
 <div class="pdf_iframe_container embed-responsive">
     <iframe class="pdf_iframe embed-responsive-item" src="http://docs.google.com/gview?url=http://www.robkeleher.com/assets/docs/Resume__Rob_Keleher.pdf&embedded=true" 

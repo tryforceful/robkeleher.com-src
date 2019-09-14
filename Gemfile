@@ -8,6 +8,9 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 gem "jekyll"
 gem "jekyll-theme-slate"
 gem "jemoji"
+#gem "bootstrap", '~> 4.3.1'
+gem 'jekyll-autoprefixer'
+gem 'mini_racer'
 
 gem "github-pages", group: :jeykll_plugins
 

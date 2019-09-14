@@ -1,21 +1,17 @@
 ---
 layout: default
-title: Home
 canonical_url: http://www.robkeleher.com
 ---
 
 {% capture include__main %}
-# Hello, World! I'm Rob.
+<h1><div id="introtext">Hello, World! I'm Rob.</div></h1>
 
 I am a senior Software and Web Developer with experience in frontend & full-stack development, project leadership and team leadership in the software industry. I have been responsible for critical products that have enhanced the experiences of tens of thousands of users. I have worked in team environments both large and small, for companies from a dozen to thousands of employees, following Agile/Scrum development principles as a certified Scrummaster. I strive to find and effect elegant solutions to technical problems as both a developer and a leader. I am also passionate about Japanese language, culture, and foreign exchange with 2 years of experience living and working in Japan as an English teacher.
 
 Check out some of my [projects](#projects) on GitHub or my [résumé](#resume).
 
-<div>
-    <section>
-        <img class="img-responsive" src="assets/images/cover.jpg"/>
-    </section>
-</div>
+<div id="coverimage"><img class="img-fluid" src="assets/images/cover.jpg"/></div>
+
 {% endcapture %}
 
 <section id="main_content">

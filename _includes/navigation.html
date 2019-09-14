@@ -1,13 +1,19 @@
 <div id="navi" class="outer sticky-top">
   <div class="inner">
-    <nav class="navbar navbar-static-top">
-      <ul class="nav navbar-nav">
-      {%- for item in site.data.navigation -%}
-        <li {% if page.url == item.link %} class="active"{% endif %}>
-          <a href="{{ item.link }}">{{ item.name }}</a>
-        </li>
-      {%- endfor -%}
-      </ul>
+    <nav class="navbar navbar-expand navbar-static-top">
+      <a class="navbar-brand d-none" href="#">Rob Keleher</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#rknavigator" aria-controls="rk-navigator" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="rknavigator">
+        <ul class="nav navbar-nav mr-auto">
+        {%- for item in site.data.navigation -%}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
+          </li>
+        {%- endfor -%}
+        </ul>
+      </div>
     </nav>
   </div>
 </div>

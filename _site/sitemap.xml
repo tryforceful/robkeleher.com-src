@@ -1,23 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/unused/contact.html</loc>
+<loc>http://www.robkeleher.com/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/unused/projects.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/unused/resume.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/assets/docs/Resume__Rob_Keleher.pdf</loc>
-<lastmod>2019-09-11T23:35:12-04:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/assets/docs/%E3%82%B1%E3%83%AC%E3%83%8F%E3%83%BC%E3%83%BB%E3%83%AD%E3%83%90%E3%83%BC%E3%83%88%E5%B1%A5%E6%AD%B4%E6%9B%B8.pdf</loc>
+<loc>http://www.robkeleher.com/assets/docs/Resume__Rob_Keleher.pdf</loc>
 <lastmod>2019-09-11T23:35:12-04:00</lastmod>
 </url>
 </urlset>
