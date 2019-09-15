@@ -245,6 +245,65 @@ footer {
   }
 }
 
+#footer-external-links {
+  display: inline-flex;
+  a, a:hover, a:focus {
+    text-decoration: none;
+  }
+  .nav-item {
+    display: inline;
+    padding: 0;
+    margin: 0 5px;
+  }
+  .fab:before {
+    color: #f2f2f2;
+  }
+}
+
+#tech {
+  .icon {
+    font-size: 100px;
+  }
+
+  .icon-color-1 {color: #dd535f;}
+  .icon-color-2 {color: #d4ad00;}
+  .icon-color-3 {color: #28a745;}
+  .icon-color-4 {color: #178ab8;}
+  .icon-color-5 {color: #6f42c1;}
+
+// color: #6f42c1;
+// color: #6f42c1;
+
+// --blue: #007bff;
+// --indigo: #6610f2;
+// --purple: #6f42c1;
+// --pink: #e83e8c;
+// --red: #dc3545;
+// --orange: #fd7e14;
+// --yellow: #ffc107;
+// --green: #28a745;
+// --teal: #20c997;
+// --cyan: #17a2b8;
+// --white: #fff;
+// --gray: #6c757d;
+// --gray-dark: #343a40;
+// --primary: #007bff;
+// --secondary: #6c757d;
+// --success: #28a745;
+// --info: #17a2b8;
+// --warning: #ffc107;
+// --danger: #dc3545;
+}
+
+#main_content section {
+  &:target::before {
+    content: "";
+    display: block;
+    height: 39px;
+    margin: -39px 0 0;
+  }
+}
+
 
 
 

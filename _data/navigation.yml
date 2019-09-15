@@ -1,8 +1,8 @@
 - name: Home
-  link: '#main'
+  link: '/#main'
 - name: Projects
-  link: '#projects'
+  link: '/#projects'
 - name: Résumé
-  link: '#resume'
+  link: '/#resume'
 - name: Contact
-  link: '#contact'
+  link: '/#contact'

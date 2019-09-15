@@ -7,7 +7,7 @@ title: Projects
 -->
 <!-- <span class="github-icon rounded"><img class="rounded" alt="GitHub" src="assets/images/blacktocat.png"/></span> -->
 # Projects
-> See more of my work on <a href="http://www.github.com/tryforceful">GitHub</a>.
+> See more of my work on <a href="http://www.github.com/tryforceful"><i class="fab fa-github"></i> GitHub</a>.
 
 ### [WaniKani Enhanced Mobile Design](https://gist.github.com/tryforceful/ff2c36baddf2a5029aa1cf03215d7880#file-tryf-wk-enhnaced-mobile-css-userscript-js) {% include userscript.html %}
 Overwrites existing mobile viewport CSS stylings of [wanikani.com](http://www.wanikani.com) in review and lesson mode, making the site more mobile-friendly.

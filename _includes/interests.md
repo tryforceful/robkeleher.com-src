@@ -10,7 +10,19 @@
         </ul>
     </div>
     <div class="col-12 col-sm-6">
-        <h2>Work Experience</h2>
+        <h2>Work History</h2>
         {% include company_logos.html classes="col-auto mx-auto" %}
     </div>
+</div>
+<div class="row" id="tech">
+    <div class="col-12">
+        <h2>Tech Experience</h2>
+    </div>
+    {%- for item in site.data.technologies -%}
+    <div class="col">
+        <p class="text-center icon"><i class="fa-fw {{item.icon}} icon-color-{%- cycle 1,2,3,4,5 -%}"></i></p>
+        <p class="h5 text-center">{{item.name}}</p>
+    </div>
+    {%- endfor -%}
+
 </div>
