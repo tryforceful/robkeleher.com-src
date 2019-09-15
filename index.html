@@ -13,6 +13,7 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <title>Rob Keleher</title>
+    <script src="https://kit.fontawesome.com/a91719909c.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
@@ -58,16 +59,16 @@
       <div class="collapse navbar-collapse" id="rknavigator">
         <ul class="nav navbar-nav mr-auto">
 <li class="nav-item">
-            <a class="nav-link" href="#main">Home</a>
+            <a class="nav-link" href="/#main">Home</a>
           </li>
 <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="/#projects">Projects</a>
           </li>
 <li class="nav-item">
-            <a class="nav-link" href="#resume">Résumé</a>
+            <a class="nav-link" href="/#resume">Résumé</a>
           </li>
 <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="/#contact">Contact</a>
           </li>
 </ul>
       </div>
@@ -111,7 +112,7 @@
         </ul>
     </div>
     <div class="col-12 col-sm-6">
-        <h2>Work Experience</h2>
+        <h2>Work History</h2>
         <section class="company_logos container-fluid">
     <div class="row">
 <div class="col-auto mx-auto">
@@ -139,6 +140,51 @@
 </section>
     </div>
 </div>
+<div class="row" id="tech">
+    <div class="col-12">
+        <h2>Tech Experience</h2>
+    </div>
+<div class="col">
+        <p class="text-center icon"><i class="fa-fw fab fa-github icon-color-1"></i></p>
+        <p class="h5 text-center">GitHub</p>
+    </div>
+<div class="col">
+        <p class="text-center icon"><i class="fa-fw fab fa-git-alt icon-color-2"></i></p>
+        <p class="h5 text-center">Git</p>
+    </div>
+<div class="col">
+        <p class="text-center icon"><i class="fa-fw fab fa-html5 icon-color-3"></i></p>
+        <p class="h5 text-center">HTML5</p>
+    </div>
+<div class="col">
+        <p class="text-center icon"><i class="fa-fw fab fa-js icon-color-4"></i></p>
+        <p class="h5 text-center">JavaScript</p>
+    </div>
+<div class="col">
+        <p class="text-center icon"><i class="fa-fw fab fa-jira icon-color-5"></i></p>
+        <p class="h5 text-center">JIRA</p>
+    </div>
+<div class="col">
+        <p class="text-center icon"><i class="fa-fw fab fa-npm icon-color-1"></i></p>
+        <p class="h5 text-center">npm</p>
+    </div>
+<div class="col">
+        <p class="text-center icon"><i class="fa-fw fab fa-node-js icon-color-2"></i></p>
+        <p class="h5 text-center">Node.js</p>
+    </div>
+<div class="col">
+        <p class="text-center icon"><i class="fa-fw fab fa-sass icon-color-3"></i></p>
+        <p class="h5 text-center">Sass</p>
+    </div>
+<div class="col">
+        <p class="text-center icon"><i class="fa-fw fab fa-slack icon-color-4"></i></p>
+        <p class="h5 text-center">Slack</p>
+    </div>
+<div class="col">
+        <p class="text-center icon"><i class="fa-fw fab fa-vuejs icon-color-5"></i></p>
+        <p class="h5 text-center">Vue.js</p>
+    </div>
+</div>
 
         </div>
     </section>
@@ -155,7 +201,7 @@ title: Projects
 <!-- <span class="github-icon rounded"><img class="rounded" alt="GitHub" src="assets/images/blacktocat.png"/></span> -->
 <h1 id="projects">Projects</h1>
 <blockquote>
-  <p>See more of my work on <a href="http://www.github.com/tryforceful">GitHub</a>.</p>
+  <p>See more of my work on <a href="http://www.github.com/tryforceful"><i class="fab fa-github"></i> GitHub</a>.</p>
 </blockquote>
 
 <h3 id="wanikani-enhanced-mobile-design-userscript">
@@ -222,10 +268,17 @@ A tool based on WaniKani to help you practice recognizing kanji visually.
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
-      <footer class="inner"><div class="footer_copyright">
-          <p class="copyright">© Rob Keleher 2019</p>
-        </div>
-        
-      </footer>
-    </div></body>
+    <footer class="inner"><div class="footer_copyright pl-0 col-auto">
+        <p class="copyright">© Rob Keleher 2019</p>
+    </div>
+
+    <div id="footer-external-links">
+        <ul class="nav">
+            <li class="nav-item"><a href="http://www.github.com/tryforceful" target="_blank" class="fa-lg fa-fw fab fa-github"></a></li>
+            <li class="nav-item"><a href="http://www.linkedin.com/in/robert-keleher" target="_blank" class="fa-lg fa-fw fab fa-linkedin"></a></li>
+        </ul>
+    </div>
+    
+    </footer>
+</div></body>
 </html>
