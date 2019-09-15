@@ -14,15 +14,27 @@
         {% include company_logos.html classes="col-auto mx-auto" %}
     </div>
 </div>
-<div class="row" id="tech">
+<div class="row justify-content-around" id="tech">
     <div class="col-12">
         <h2>Tech Experience</h2>
     </div>
     {%- for item in site.data.technologies -%}
-    <div class="col">
-        <p class="text-center icon"><i class="fa-fw {{item.icon}} icon-color-{%- cycle 1,2,3,4,5 -%}"></i></p>
+    <div class="col-auto">
+        <p class="text-center icon">
+            {%- if item.icon -%}
+                <i class="fa-fw {{item.icon}} icon-color-{% cycle 1,2,3,4,5 %}"></i>
+            {%- elsif item.icon_special -%}
+                <span class="icon-color-{% cycle 1,2,3,4,5 %}">{{ item.icon_special }}</span>
+            {%- endif -%}
+        </p>
         <p class="h5 text-center">{{item.name}}</p>
     </div>
     {%- endfor -%}
+    <!-- below: hack for left-justified auto cols -->
+    <div class="col-auto col-extra"><div></div></div>
+    <div class="col-auto col-extra"><div></div></div>
+    <div class="col-auto col-extra"><div></div></div>
+    <div class="col-auto col-extra"><div></div></div>
+    <div class="col-auto col-extra"><div></div></div>
 
 </div>

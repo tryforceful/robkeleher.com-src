@@ -1,3 +1,13 @@
+- icon_special : '<span class="fa-layers fa-fw">
+    <i class="fas fa-circle" data-fa-transform="shrink-9 up-3.7"></i>
+    <i class="fas fa-circle" data-fa-transform="shrink-9 down-4.5 up-0.9 left-4.2"></i>
+    <i class="fas fa-circle" data-fa-transform="shrink-9 down-4.5 up-0.9 right-4.2"></i>
+  </span>'
+  name: Asana
+- icon_special: '<span class="fa-layers fa-fw">
+    <span class="fa-layers-text" data-fa-transform="shrink-5" style="font-weight:900">C++</span>
+  </span>'
+  name: C / C++
 - icon: fab fa-github
   name: GitHub
 # - icon: fab fa-github-alt
@@ -18,16 +28,22 @@
   name: JavaScript
 - icon: fab fa-jira
   name: JIRA
+- icon: fab fa-java
+  name: Java
 # - icon: fab fa-linkedin
 #   name: Test
 # - icon: fab fa-linkedin-in
 #   name: Test
+- icon: fas fa-database
+  name: MS-SQL
 - icon: fab fa-npm
   name: npm
 - icon: fab fa-node-js
   name: Node.js
 # - icon: fab fa-node
 #   name: Test
+- icon: fas fa-gem
+  name: Ruby
 - icon: fab fa-sass
   name: Sass
 - icon: fab fa-slack
@@ -35,11 +51,5 @@
 - icon: fab fa-vuejs
   name: Vue.js
 
-
-  #C
-  #C++
-  #Java
-  #Asana
   #Jquery
-  #SQL
   #UNIX

@@ -202,9 +202,32 @@ a.badge-dark.userscript_badge {
   // }
 }
 
+#interests {
+  .col-extra div {
+    width: 125px;
+    height: 0;
+  }
+}
+
 footer {
   .footer_copyright {
       display: inline-block;
+  }
+
+  #footer-external-links {
+    display: inline-flex;
+    a, a:hover, a:focus {
+      text-decoration: none;
+      color: #f2f2f2;
+    }
+    .nav-item {
+      display: inline;
+      padding: 0;
+      margin: 0 5px;
+    }
+    .fab:before {
+      color: #f2f2f2;
+    }
   }
 }
 
@@ -245,20 +268,6 @@ footer {
   }
 }
 
-#footer-external-links {
-  display: inline-flex;
-  a, a:hover, a:focus {
-    text-decoration: none;
-  }
-  .nav-item {
-    display: inline;
-    padding: 0;
-    margin: 0 5px;
-  }
-  .fab:before {
-    color: #f2f2f2;
-  }
-}
 
 #tech {
   .icon {

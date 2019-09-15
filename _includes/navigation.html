@@ -9,7 +9,7 @@
         <ul class="nav navbar-nav mr-auto">
         {%- for item in site.data.navigation -%}
           <li class="nav-item">
-            <a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
+            <a class="nav-link" href="{% unless page.url == '/' %}/{% endunless %}{{ item.link }}">{{ item.name }}</a>
           </li>
         {%- endfor -%}
         </ul>
