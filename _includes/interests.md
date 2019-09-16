@@ -18,8 +18,11 @@
     <div class="col-12">
         <h2>Tech Experience</h2>
     </div>
+    
+    {%- assign offsettime = 0 -%}
     {%- for item in site.data.technologies -%}
-    <div class="col-auto">
+    <div class="col-auto" data-aos="flip-left" data-aos-anchor="#tech" data-aos-duration="750" data-aos-delay="{{ offsettime }}">
+        {%- assign offsettime = offsettime | plus: 50 -%}
         <p class="text-center icon">
             {%- if item.icon -%}
                 <i class="fa-fw {{item.icon}} icon-color-{% cycle 1,2,3,4,5 %}"></i>

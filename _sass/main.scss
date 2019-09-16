@@ -223,6 +223,13 @@ a.badge-dark.userscript_badge {
   z-index: 1100;
 
   @include box-shadow(none);
+  @media (max-width: $-breakpoint-sm) {
+    top: 50px;
+    height: 120px;
+  }
+  @media (max-width: 500px) {
+    display: none;
+  }
 }
 
 
