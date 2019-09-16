@@ -1,20 +1,20 @@
 <div class="row">
     <div class="col-12 col-sm-6">
         <h2>My Interests</h2>
-        <ul class="interests col-auto mx-auto col-sm-11 col-md-offset-1">
-            <li>:computer: Programming</li>
-            <li>:microphone: Singing</li>
-            <li>:bicyclist: Cycling</li>
-            <li>:jp: Japan</li>
-            <li>:video_game: The Legend of Zelda!</li>
+        <ul class="fa-ul interests mx-auto col-auto mx-sm-0 col-sm-11 offset-sm-1">
+            <li><span class="fa-li">:computer:</span> Programming</li>
+            <li><span class="fa-li">:microphone:</span> Singing</li>
+            <li><span class="fa-li">:bicyclist:</span> Cycling</li>
+            <li><span class="fa-li">:jp:</span> Japan</li>
+            <li><span class="fa-li">:video_game:</span> The Legend of Zelda!</li>
         </ul>
     </div>
     <div class="col-12 col-sm-6">
         <h2>Work History</h2>
-        {% include company_logos.html classes="col-auto mx-auto" %}
+        {% include company_logos.html classes="col-12 col-sm-auto mx-auto" %}
     </div>
 </div>
-<div class="row justify-content-around" id="tech">
+<div class="row justify-content-around pb-3" id="tech">
     <div class="col-12">
         <h2>Tech Experience</h2>
     </div>

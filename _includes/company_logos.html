@@ -4,7 +4,7 @@
         {%- for company in site.data.company_logos -%}
         <div class="{{ '' | append: include.classes }}">
             {% if company.url %}<a target="_blank" href="{{ company.url }}">{% endif %}
-                <div class="company_card center-block" style="{{ 'background-color: ' | append: company.bg_color }}">
+                <div class="company_card mx-auto" style="{{ 'background-color: ' | append: company.bg_color }}">
                     <img src="{{ 'assets/images/' | append: company.logo_url}}">
                 </div>
             {% if company.url %}</a>{% endif %}

@@ -1,24 +1,23 @@
-$background_black: #373737;
+
+$-breakpoint-xs: 0;
+$-breakpoint-sm: 576px;
+$-breakpoint-md: 768px;
+$-breakpoint-lg: 992px;
+$-breakpoint-xl: 1200px;
+
+
+
 $lightblue: #0090ff;//rgb(76, 218, 243);
+$lightblue_analog_1: #00ff6f;
+$lightblue_analog_2: #3700ff;
+
 $superlightblue: #8eceff;
 $redpink_from_pumpkin: #fa5b60;
 
-$background_gray: #f2f2f2;
+$background_black: #11112f;
+$background_gray: #e0e0e0;
+$dark-background: #11112f;
+$light-background: #f2f2f2;
 
-
-@mixin vertical-align ($position: relative) {
-	position: $position;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
-
-@mixin box-shadow ($string) {
-	-webkit-box-shadow: $string;
-	-moz-box-shadow:         $string;
-    -o-box-shadow:         $string;
-	-ms-box-shadow:    $string;
-    box-shadow:         $string;
-}
+$navi_and_forkme_bg: $lightblue;
+$navi_focus_gray: #fff;

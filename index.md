@@ -15,30 +15,35 @@ Check out some of my [projects](#projects) on GitHub or my [résumé](#resume).
 {% endcapture %}
 
 <section id="main_content">
-    <section id="main" class="outer">
+    <section id="_about" class="outer">
+        <a class="section-anchor" id="about"></a>
         <div class="inner">
         {{ include__main | markdownify }}
         </div>
     </section>
-    <section id="interests" class="outer">
+    <section id="_interests" class="outer dark-section">
+        <a class="section-anchor" id="interests"></a>
         <div class="inner">
         {% capture include__interests %}{% include interests.md %}{% endcapture %}
         {{ include__interests | markdownify }}
         </div>
     </section>
-    <section id="projects" class="outer">
+    <section id="_projects" class="outer">
+        <a class="section-anchor" id="projects"></a>
         <div class="inner">
         {% capture include__projects %}{% include projects.md %}{% endcapture %}
         {{ include__projects | markdownify }}
         </div>
     </section>
-    <section id="resume" class="outer">
+    <section id="_resume" class="outer dark-section">
+        <a class="section-anchor" id="resume"></a>
         <div class="inner">
         {% capture include__resume %}{% include resume.md %}{% endcapture %}
         {{ include__resume | markdownify }}
         </div>
     </section>
-    <section id="contact" class="outer">
+    <section id="_contact" class="outer">
+        <a class="section-anchor" id="contact"></a>
         <div class="inner">
         {% capture include__contact %}{% include contact.md %}{% endcapture %}
         {{ include__contact | markdownify }}

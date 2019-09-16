@@ -8,17 +8,17 @@
     <span class="fa-layers-text" data-fa-transform="shrink-5" style="font-weight:900">C++</span>
   </span>'
   name: C / C++
-- icon: fab fa-github
-  name: GitHub
-# - icon: fab fa-github-alt
-#   name: Test
-# - icon: fab fa-github-square
-#   name: Test
 # - icon: fab fa-git
 #   name: Test
 - icon: fab fa-git-alt
   name: Git
 # - icon: fab fa-git-square
+#   name: Test
+- icon: fab fa-github
+  name: GitHub
+# - icon: fab fa-github-alt
+#   name: Test
+# - icon: fab fa-github-square
 #   name: Test
 # - icon: fab fa-instagram
 #   name: Test
