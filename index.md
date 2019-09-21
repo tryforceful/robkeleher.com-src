@@ -3,32 +3,23 @@ layout: default
 canonical_url: http://www.robkeleher.com
 ---
 
-{% capture include__main %}
-<h1><div id="introtext">Hello, World! I'm Rob.</div></h1>
-
-I am a senior Software and Web Developer with experience in frontend & full-stack development, project leadership and team leadership in the software industry. I have been responsible for critical products that have enhanced the experiences of tens of thousands of users. I have worked in team environments both large and small, for companies from a dozen to thousands of employees, following Agile/Scrum development principles as a certified Scrummaster. I strive to find and effect elegant solutions to technical problems as both a developer and a leader. I am also passionate about Japanese language, culture, and foreign exchange with 2 years of experience living and working in Japan as an English teacher.
-
-Check out some of my [projects](#projects) on GitHub or my [résumé](#resume).
-
-<div id="coverimage"><img class="img-fluid" src="assets/images/cover.jpg"/></div>
-
-{% endcapture %}
-
 <section id="main_content">
-    <section id="_about" class="outer">
+    <section id="_intro" class="outer gray-section">
+        <a class="section-anchor" id="intro"></a>
+        <div class="inner">
+        {% capture include__intro %}{% include intro.md %}{% endcapture %}
+        {{ include__intro | markdownify }}
+        </div>
+        <div class="d-none d-sm-block coverimage"><img class="img-fluid" src="assets/images/cover.jpg"/></div>
+    </section>
+    <section id="_about" class="outer dark-section">
         <a class="section-anchor" id="about"></a>
         <div class="inner">
-        {{ include__main | markdownify }}
+        {% capture include__about %}{% include interests.md %}{% endcapture %}
+        {{ include__about | markdownify }}
         </div>
     </section>
-    <section id="_interests" class="outer dark-section">
-        <a class="section-anchor" id="interests"></a>
-        <div class="inner">
-        {% capture include__interests %}{% include interests.md %}{% endcapture %}
-        {{ include__interests | markdownify }}
-        </div>
-    </section>
-    <section id="_projects" class="outer">
+    <section id="_projects" class="outer gray-section">
         <a class="section-anchor" id="projects"></a>
         <div class="inner">
         {% capture include__projects %}{% include projects.md %}{% endcapture %}
@@ -42,7 +33,7 @@ Check out some of my [projects](#projects) on GitHub or my [résumé](#resume).
         {{ include__resume | markdownify }}
         </div>
     </section>
-    <section id="_contact" class="outer">
+    <section id="_contact" class="outer gray-section">
         <a class="section-anchor" id="contact"></a>
         <div class="inner">
         {% capture include__contact %}{% include contact.md %}{% endcapture %}

@@ -1,8 +1,36 @@
+
+# - name: "<i class='fas fa-caret-up'></i>"
+#   link: "#"
+# - name: "<i class='fas fa-chevron-up'></i>"
+#   link: "#"
+# - name: "<i class='fas fa-arrow-up'></i>"
+#   link: "#"
+# - name: "<i class='fas fa-angle-up'></i>"
+#   link: "#"
+# - name: "<i class='fas fa-arrow-circle-up'></i>"
+#   link: "#"
+- name: "<i class='fas fa-angle-double-up'></i>"
+  link: "#"
+  nav-class: 'to_top'
+# - name: "<i class='fas fa-arrow-alt-circle-up'></i>"
+#   link: "#"
+# - name: "<i class='far fa-arrow-alt-circle-up'></i>"
+#   link: "#"
+# - name: "<i class='fas fa-chevron-circle-up'></i>"
+#   link: "#"
+# - name: "<i class='fas fa-caret-square-up'></i>"
+#   link: "#"
+# - name: "<i class='far fa-caret-square-up'></i>"
+#   link: "#"
 - name: About
   link: '#about'
+  theme-class: dark-link
 - name: Projects
   link: '#projects'
+  theme-class: gray-link
 - name: Résumé
   link: '#resume'
+  theme-class: dark-link
 - name: Contact
   link: '#contact'
+  theme-class: gray-link

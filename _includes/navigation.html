@@ -8,8 +8,8 @@
       <div class="collapse navbar-collapse" id="rknavigator">
         <ul class="nav navbar-nav mr-auto">
         {%- for item in site.data.navigation -%}
-          <li class="nav-item">
-            <a class="nav-link" href="{% unless page.url == '/' %}/{% endunless %}{{ item.link }}">{{ item.name }}</a>
+          <li class="nav-item {{item.nav-class}}">
+            <a class="nav-link {{item.theme-class}}" href="{% unless page.url == '/' %}/{% endunless %}{{ item.link }}">{{ item.name }}</a>
           </li>
         {%- endfor -%}
         </ul>

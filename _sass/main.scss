@@ -17,8 +17,12 @@ img {
   @include box-shadow(none);
 }
 //////////////////////////////
+html {
+  scroll-behavior: smooth;
+}
 
 #forkme_banner {
+  z-index: 1500;
   background: url(../images/blacktocat.png) $navi_and_forkme_bg no-repeat 95% 50%;
 }
 
@@ -51,7 +55,18 @@ footer {
   max-height: 300px;
 }
 #header_wrap {
-  background: linear-gradient(to top, $dark-background, #212121);
+  //background: linear-gradient(to top, $dark-background, #212121);
+  background: $dark-background;
+  header {
+    h1, h2, h3, h4, h5, h6 {
+      color: hsl(197, 77%, 81%);
+    }
+    //#project_title
+    #project_tagline {
+      font-size: 26px;
+      color: hsla(197, 77%, 81%, 0.8);
+    }
+  }
 }
 #footer_wrap {
   background: $dark-background;
@@ -96,23 +111,32 @@ a.badge-dark.userscript_badge {
   // position: relative;
   // top: -0.25em;
 
-  &, &:hover, &:focus, &:visited {
-    color: white;
-  }
   &, &:visited {
-    background-color: #f0a;
+    background-color: hsl(280, 100%, 50%);
+    color: #ddd;//#f0a;
   }
   &:hover, &:focus {
-    background-color: #a0f;
+    color: #fff;
   }
+
+  // &, &:hover, &:focus, &:visited {
+  //   color: #bbb;
+  // }
+  // &, &:visited {
+  //   background-color: #555;//#f0a;
+  // }
+  // &:hover, &:focus {
+  //   color:white;
+  // }
 }
 
 #main_content_wrap {
+  overflow-x: hidden;
   border-top: 0;
-  background-color: $background_gray;
+  background-color: $gray-background;
 }
 
-#main_content #_about .inner {
+#main_content #_intro .inner {
   padding-bottom: 0;
   vertical-align: unset;
 }
@@ -137,10 +161,14 @@ a.badge-dark.userscript_badge {
 // -webkit-filter: blur(0.3);
 // filter: blur(0.3);
 
-#coverimage {
+.coverimage {
   vertical-align: unset;
-  bottom: -6px;
+  //bottom: -6px;
   @include fullscreen-width();
+
+  img{
+    filter: contrast(1.2) brightness(0.8);
+  }
 
   max-height: 400px;
   overflow-y: hidden;
@@ -166,6 +194,8 @@ a.badge-dark.userscript_badge {
 }
 
 #navi {
+  overflow-y: hidden;
+  height: 40px;
   background-color: $navi_and_forkme_bg;
   
   .inner {
@@ -176,6 +206,11 @@ a.badge-dark.userscript_badge {
     margin-bottom: 0;
     border-bottom: 0;
     padding: 0;
+    
+    ul.nav {
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+    }
 
     // .navbar-nav > li > a {
     //   padding: 15px;
@@ -192,6 +227,8 @@ a.badge-dark.userscript_badge {
         color: white;
         font-weight: 500;
         font-family: $font-family-mono;
+        font-size: 16px;
+        padding-bottom: 20px;
       }
 
       &.active,
@@ -209,7 +246,51 @@ a.badge-dark.userscript_badge {
 
       &.active,
       a.active {
-        background-color: $background_gray;
+        background-color: $background_light_gray;
+
+        &.dark-link {
+          background-color: $dark-background;
+          color: white;
+        }
+        &.gray-link {
+          background-color: $gray-background;
+          color: white;
+        }
+      }
+    }
+
+    .to_top {
+      .nav-link {
+        padding-left: 0.75em;
+        padding-right: 0.75em;
+        height: 40px;
+      }
+      li.active,
+      a.active {
+        background-color: $navi_and_forkme_bg;
+      }
+
+      @media (max-width: $-breakpoint-md)
+      {
+        visibility: hidden;
+        opacity: 0;
+        width: 0;
+        transition: width .3s ease, opacity .3s linear;
+        &.small-in-navi {
+          width: 34px;
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+      @media (min-width: $-breakpoint-md){
+        display: none;
+        &.small-in-navi {
+          display: block;
+          animation: 0.3s ease to_top_pan_down forwards;
+          position: fixed;
+          left: 5px;
+          top: 0;
+        }
       }
     }
   }
@@ -218,22 +299,67 @@ a.badge-dark.userscript_badge {
 #triforce_logo {
   display: block;
   position: absolute;
-  top: 72px;
   right: 7px;
   z-index: 1100;
-
   @include box-shadow(none);
+
+  @media (min-width: $-breakpoint-sm) {
+    top: 75px;
+    height: 180px;
+    transition: 
+      top 0.5s ease,
+      height 0.5s ease;
+  }
   @media (max-width: $-breakpoint-sm) {
     top: 50px;
     height: 120px;
+    opacity: 1;
+    transition: 
+      opacity 0.5s ease,
+      top 0.5s ease,
+      height 0.5s ease;
   }
-  @media (max-width: 500px) {
-    display: none;
+  @media (max-width: 450px) {
+    z-index: 0;
+    opacity: .125;
+    transition: opacity 0.5s ease;
+  }
+
+  &.back-to-top {
+    transition: 0s;
+    @keyframes normal-size-slide-from-top { from {transform: translateY(-100px); opacity: 0;}}
+    animation: normal-size-slide-from-top 0.4s ease;
+  }
+
+  &.small-in-navi {
+      position: fixed;
+      top: 2px;
+      height: 35px;
+      z-index: 1100;
+      //transition: height 0.3s ease;
+      animation: 0.3s ease trif_pan_down forwards;
+
+    @media (min-width: $-breakpoint-sm) {
+      opacity: 1;
+      z-index: 1100;
+      visibility: visible;
+      transition: opacity 0.5s ease 0.05s, visibility 0.05s ease, z-index 0.05s linear;
+    }
+    @media (max-width: $-breakpoint-sm) {
+      opacity: 0;
+      z-index: -10;
+      visibility: hidden;
+      transition: opacity 0.5s ease, visibility 0.05s ease 0.5s, z-index 0.05s linear 0.5s;
+      transition-duration: 0s;
+    }
   }
 }
 
+@keyframes trif_pan_down { from {top: -160px; } to {top: 2px; }}
+@keyframes to_top_pan_down { from {top: -160px; } to {top: 0px; }}
 
-// #_interests
+
+// #_about
 // {
 //   background-color: #aadaff;//#c9c0fd;
 // }
@@ -241,9 +367,35 @@ a.badge-dark.userscript_badge {
 //   background-color: #aadaff;
 // }
 
+#main_content_wrap.light-section {
+  
+  // h1, h2, h3, h4, h5, h6 {
+  //   color: $gray-background-font-color;
+  // }
+  background-color: $light-background;
+  // color: $gray-background-font-color;
+  // a {
+  //   color: skyblue;
+  //   font-weight: bolder;
+  // }
+}
+
+.gray-section {
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $gray-background-font-color;
+  }
+  background-color: $gray-background;
+  color: $gray-background-font-color;
+  a {
+    color: skyblue;
+    font-weight: bolder;
+  }
+}
+
 .dark-section {
   h1, h2, h3, h4, h5, h6 {
-    color: lawngreen;
+    color: white;
   }
   background-color: #11112f;
   color: #fff !important;
@@ -262,7 +414,32 @@ a.badge-dark.userscript_badge {
   // }
 }
 
-#_interests {
+#_resume {
+  .pdf_iframe_container {
+    filter: brightness(0.9);
+  }
+}
+
+
+.green_section {
+  blockquote {
+    color: rgb(187, 187, 187);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: #0fa;
+    color: white;
+  }
+  background-color: #044;
+  background-color: hsla(180, 100%, 10%, 1);
+  color: #0fa !important;
+  color: lawngreen !important;
+  a {
+    color: skyblue;
+    color: #84c8ff;
+  }
+}
+
+#_about {
   .interests {
     list-style-type: none;
     @media (max-width: $-breakpoint-sm){
@@ -286,6 +463,17 @@ a.badge-dark.userscript_badge {
   .col-extra div {
     width: 125px;
     height: 0;
+  }
+}
+
+#_projects {
+  blockquote p {
+    color: #999;
+  }
+  img.project_image {
+    border-radius: 5px;
+    filter: saturate(0.9) brightness(0.9);
+    max-height: 300px;
   }
 }
 
@@ -334,11 +522,13 @@ footer {
 }
 
 #linkedin_container {
-  .LI-badge-container { 
-    background-color: white;
-  }
+  // .LI-badge-container { 
+  //   background-color: white;
+  // }
   margin-top: 40px;
   margin-bottom: 20px;
+  width: auto;
+  border-radius: 4px;
   img { 
     box-shadow: initial;
     -webkit-box-shadow:initial;
@@ -409,19 +599,59 @@ footer {
 }
 
 
-
+@media (max-width: 400px)
+{
+  #introtext {
+    display: none;
+  }
+  #introtext_small {
+    display: inline-block;
+  }
+}
+@media (min-width: 400px)
+{
+  #introtext {
+    display: inline-block;
+  }
+  #introtext_small {
+    display: none;
+  }
+}
 
 @keyframes typing { from { width: 0; } 52% {width: calc(21.25ch / 22 * 13); animation-timing-function: linear} 64% {width: calc(21.25ch / 22 * 13); animation-timing-function: steps(9,end);} to {width: calc(21.25ch);} }
+@keyframes typing1 { from { width: 0; } to {width: 12.25ch;} }
+@keyframes typing2 { from { width: 0; } to {width: 7.8ch; } }
 @keyframes blink-caret { 50% { border-color: transparent; } }
+@keyframes blink-caret-reverse { from, to { border-color: transparent; } 50% { border-color: $gray-background-font-color; } }
 
-#introtext { 
+
+#introtext {
 	//font: bold 100% Consolas, Monaco, monospace;
-	border-right: .1em solid black;
-	//width: 16.1em;
-	width: calc(21.25ch);
+	border-right: .1em solid $gray-background-font-color;
+	width: 16.1em;
 	white-space: nowrap;
 	overflow: hidden;
-  @include animation2 (typing 1.5s steps(13, end) 1s backwards, blink-caret .5s step-end infinite alternate);
+  animation:  typing 1.5s steps(13, end) 1s both, 
+              blink-caret .5s step-end infinite alternate;
+}
+
+#introtext_small {
+  #introtext_small_1 {
+    border-right: .1em solid $gray-background-font-color;
+    width: 12.25ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:  typing1 0.7s steps(13, end) 1s backwards,
+                blink-caret .5s step-start 4 alternate forwards;
+  }
+  #introtext_small_2 {
+    border-right: .1em solid $gray-background-font-color;
+    width: 7.8ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:  typing2 0.5s steps(8, end) 2.0s both, 
+                blink-caret-reverse .5s step-end infinite both alternate 2.0s;
+  }
 }
 
 // .blinking-cursor {
@@ -431,42 +661,6 @@ footer {
 // }
 
 // @keyframes "blink" {
-//   from, to {
-//     color: transparent;
-//   }
-//   50% {
-//     color: black;
-//   }
-// }
-
-// @-moz-keyframes blink {
-//   from, to {
-//     color: transparent;
-//   }
-//   50% {
-//     color: black;
-//   }
-// }
-
-// @-webkit-keyframes "blink" {
-//   from, to {
-//     color: transparent;
-//   }
-//   50% {
-//     color: black;
-//   }
-// }
-
-// @-ms-keyframes "blink" {
-//   from, to {
-//     color: transparent;
-//   }
-//   50% {
-//     color: black;
-//   }
-// }
-
-// @-o-keyframes "blink" {
 //   from, to {
 //     color: transparent;
 //   }

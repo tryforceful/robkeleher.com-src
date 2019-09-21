@@ -45,11 +45,11 @@
   <body data-spy="scroll" data-target="#rknavigator" data-offset="1">
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
+    <a id="home"></a>
     <header class="inner">
       <a id="forkme_banner" target="_blank" href="http://www.github.com/tryforceful">@tryforceful</a>
       <img id="triforce_logo" src="assets/images/transparent_triforce_180_180.png">
       
-
       <h1 id="project_title">Rob Keleher</h1>
       <h2 id="project_tagline">Web &amp; Software Developer</h2></header>
 </div><div id="navi" class="outer sticky-top">
@@ -61,43 +61,50 @@
       </button>
       <div class="collapse navbar-collapse" id="rknavigator">
         <ul class="nav navbar-nav mr-auto">
-<li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+<li class="nav-item to_top">
+            <a class="nav-link " href="#"><i class="fas fa-angle-double-up"></i></a>
           </li>
-<li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
+<li class="nav-item ">
+            <a class="nav-link dark-link" href="#about">About</a>
           </li>
-<li class="nav-item">
-            <a class="nav-link" href="#resume">Résumé</a>
+<li class="nav-item ">
+            <a class="nav-link gray-link" href="#projects">Projects</a>
           </li>
-<li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+<li class="nav-item ">
+            <a class="nav-link dark-link" href="#resume">Résumé</a>
+          </li>
+<li class="nav-item ">
+            <a class="nav-link gray-link" href="#contact">Contact</a>
           </li>
 </ul>
       </div>
     </nav>
   </div>
 </div><!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-        
-<section id="main_content">
-    <section id="_about" class="outer">
-        <a class="section-anchor" id="about"></a>
+    <div id="main_content_wrap" class="outer ">
+        <section id="main_content">
+    <section id="_intro" class="outer gray-section">
+        <a class="section-anchor" id="intro"></a>
         <div class="inner">
         
-<h1><div id="introtext">Hello, World! I'm Rob.</div></h1>
+        <h1 class="mb-3">
+<div id="introtext">Hello, World! I'm Rob.</div>
+<div id="introtext_small">
+    <div id="introtext_small_1">Hello, World!</div>
+    <div id="introtext_small_2">I'm Rob.</div>
+</div>
+</h1>
+<div class="d-block d-sm-none coverimage"><img class="img-fluid" src="assets/images/cover.jpg"></div>
 
 <p>I am a senior Software and Web Developer with experience in frontend &amp; full-stack development, project leadership and team leadership in the software industry. I have been responsible for critical products that have enhanced the experiences of tens of thousands of users. I have worked in team environments both large and small, for companies from a dozen to thousands of employees, following Agile/Scrum development principles as a certified Scrummaster. I strive to find and effect elegant solutions to technical problems as both a developer and a leader. I am also passionate about Japanese language, culture, and foreign exchange with 2 years of experience living and working in Japan as an English teacher.</p>
 
 <p>Check out some of my <a href="#projects">projects</a> on GitHub or my <a href="#resume">résumé</a>.</p>
 
-<div id="coverimage"><img class="img-fluid" src="assets/images/cover.jpg"></div>
-
-
         </div>
+        <div class="d-none d-sm-block coverimage"><img class="img-fluid" src="assets/images/cover.jpg"></div>
     </section>
-    <section id="_interests" class="outer dark-section">
-        <a class="section-anchor" id="interests"></a>
+    <section id="_about" class="outer dark-section">
+        <a class="section-anchor" id="about"></a>
         <div class="inner">
         
         <div class="row">
@@ -220,7 +227,7 @@
 
         </div>
     </section>
-    <section id="_projects" class="outer">
+    <section id="_projects" class="outer gray-section">
         <a class="section-anchor" id="projects"></a>
         <div class="inner">
         
@@ -240,17 +247,17 @@ title: Projects
 <h3 id="wanikani-enhanced-mobile-design"><a href="https://gist.github.com/tryforceful/ff2c36baddf2a5029aa1cf03215d7880#file-tryf-wk-enhnaced-mobile-css-userscript-js">WaniKani Enhanced Mobile Design</a></h3>
 <p><a class="badge badge-dark userscript_badge" target="_blank" href="https://www.tampermonkey.net">Userscript</a> Overwrites existing mobile viewport CSS stylings of <a href="http://www.wanikani.com">wanikani.com</a> in review and lesson mode, making the site more mobile-friendly.</p>
 
-<p><img class="d-block mx-auto img-fluid" style="max-height: 300px" src="assets/images/wk/wk_mobile_css_4.png"></p>
+<p><img class="project_image d-block mx-auto img-fluid" src="assets/images/wk/wk_mobile_css_4.png"></p>
 
 <h3 id="wanikani-clickable-popover--study-assistant"><a href="https://gist.github.com/tryforceful/5a2682f76b359ba283913eaebe34f8e6">WaniKani Clickable Popover &amp; Study Assistant</a></h3>
 <p><a class="badge badge-dark userscript_badge" target="_blank" href="https://www.tampermonkey.net">Userscript</a> On WaniKani reviews and lessons, shows reading &amp; translation info in a popover when hovering over quiz kanji/vocab words. Also provides a clickable link to <a href="http://www.jisho.org">jisho.org</a> for the relevant quiz item.</p>
 
-<p><img class="d-block mx-auto img-fluid" style="max-height: 300px" src="assets/images/wk/wk_popover_3.png"></p>
+<p><img class="project_image d-block mx-auto img-fluid" src="assets/images/wk/wk_popover_3.png"></p>
 
 <h3 id="wanikani-audio-for-japanese-example-sentences"><a href="https://gist.github.com/tryforceful/e7c44b2e715ae3e7679b7e108d84d2b0">WaniKani Audio for Japanese Example Sentences</a></h3>
 <p><a class="badge badge-dark userscript_badge" target="_blank" href="https://www.tampermonkey.net">Userscript</a> Adds audio talkback support in male and female Japanese voices to example sentences on WaniKani lessons and reviews.</p>
 
-<p><img class="d-block mx-auto img-fluid" src="assets/images/wk/wk_audio.png"></p>
+<p><img class="project_image d-block mx-auto img-fluid" src="assets/images/wk/wk_audio.png"></p>
 
 <!--
 ### WaniKani Kanji Recognition Study Tool <span class="label label-default">Incomplete</span>
@@ -277,7 +284,7 @@ A tool based on WaniKani to help you practice recognizing kanji visually.
 
         </div>
     </section>
-    <section id="_contact" class="outer">
+    <section id="_contact" class="outer gray-section">
         <a class="section-anchor" id="contact"></a>
         <div class="inner">
         
@@ -285,8 +292,12 @@ A tool based on WaniKani to help you practice recognizing kanji visually.
 
 <p>Email me at <a href="mailto:hello@robkeleher.com"><i class="fas fa-envelope"></i> hello@robkeleher.com</a></p>
 
-<div id="linkedin_container">
-    <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="robert-keleher"><a class="LI-simple-link" href="https://www.linkedin.com/in/robert-keleher?trk=profile-badge">Robert Keleher's LinkedIn</a></div>
+<div class="row">
+    <div class="col col-sm-auto mx-sm-auto">
+        <div id="linkedin_container">
+            <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="robert-keleher"><a class="LI-simple-link" href="https://www.linkedin.com/in/robert-keleher?trk=profile-badge">Robert Keleher's LinkedIn</a></div>
+        </div>
+    </div>
 </div>
 
         </div>
