@@ -416,7 +416,26 @@ a.badge-dark.userscript_badge {
 
 #_resume {
   .pdf_iframe_container {
-    filter: brightness(0.9);
+
+    #pdf_spinner {
+      display: block;
+    }
+    #pdf_iframe {
+      display: none;
+    }
+
+    &.iframe_loaded {
+      padding-top: 129.41%; // 8.5 x 11 US Letter ratio
+      filter: brightness(0.9);
+    
+      #pdf_spinner {
+        display: none;
+      }
+      #pdf_iframe {
+        display: block;
+      }
+    }
+
   }
 }
 
@@ -517,9 +536,6 @@ footer {
   }
 }
 
-.pdf_iframe_container {
-  padding-top: 129.41%; // 8.5 x 11 US Letter ratio
-}
 
 #linkedin_container {
   // .LI-badge-container { 
@@ -618,7 +634,7 @@ footer {
   }
 }
 
-@keyframes typing { from { width: 0; } 52% {width: calc(21.25ch / 22 * 13); animation-timing-function: linear} 64% {width: calc(21.25ch / 22 * 13); animation-timing-function: steps(9,end);} to {width: calc(21.25ch);} }
+@keyframes typing { from { width: 0; } 52% {width: calc(21.25ch / 22 * 13); animation-timing-function: linear} 64% {width: calc(21.25ch / 22 * 13); animation-timing-function: steps(9,end);} to {width: 21.25ch;} }
 @keyframes typing1 { from { width: 0; } to {width: 12.25ch;} }
 @keyframes typing2 { from { width: 0; } to {width: 7.8ch; } }
 @keyframes blink-caret { 50% { border-color: transparent; } }

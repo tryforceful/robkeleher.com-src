@@ -32,3 +32,7 @@ $(document).ready( function () {
     triforce_logo_position();
     $(window).scroll(triforce_logo_position);
 } );
+
+function resumeIFrameLoaded() {
+    $(".pdf_iframe_container").addClass("iframe_loaded");
+}

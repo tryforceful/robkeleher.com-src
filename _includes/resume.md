@@ -6,7 +6,12 @@ Please [contact me](#contact) if you wish to see my Japanese résumé.<br>
 Download my English résumé [<i class="fas fa-file-download"></i> here]( assets/docs/Resume__Rob_Keleher.pdf ).
 
 <div class="pdf_iframe_container embed-responsive">
-    <iframe class="pdf_iframe embed-responsive-item" src="http://docs.google.com/gview?url=http://www.robkeleher.com/assets/docs/Resume__Rob_Keleher.pdf&embedded=true" 
+    <div id="pdf_spinner" class="text-center">
+        <div class="spinner-border text-light" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <iframe onLoad="resumeIFrameLoaded();" id="pdf_iframe" class="embed-responsive-item" src="https://docs.google.com/gview?url=https://www.robkeleher.com/assets/docs/Resume__Rob_Keleher.pdf&embedded=true" 
     frameborder="0">
     </iframe>
 </div>

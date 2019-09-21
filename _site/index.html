@@ -5,7 +5,29 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v="><link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v="><!-- <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro&display=swap" rel="stylesheet"> -->
+    <link rel="preload" href="assets/fonts/SourceCodePro/SourceCodePro.woff2" as="font" crossorigin>
+    <style>
+   /* latin-ext */
+    @font-face {
+      font-family: 'Source Code Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: local('Source Code Pro Regular'), local('SourceCodePro-Regular'), url(assets/fonts/SourceCodePro/SourceCodePro.woff2) format('woff2'), url(assets/fonts/SourceCodePro/SourceCodePro-Regular.ttf) format('truetype');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+    @font-face {
+      font-family: 'Source Code Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: local('Source Code Pro Regular'), local('SourceCodePro-Regular'), url(assets/fonts/SourceCodePro/SourceCodePro.woff2) format('woff2'), url(assets/fonts/SourceCodePro/SourceCodePro-Regular.ttf) format('truetype');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    </style>
+
 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
@@ -278,7 +300,12 @@ A tool based on WaniKani to help you practice recognizing kanji visually.
 <p>Download my English résumé <a href="assets/docs/Resume__Rob_Keleher.pdf"><i class="fas fa-file-download"></i> here</a>.</p>
 
 <div class="pdf_iframe_container embed-responsive">
-    <iframe class="pdf_iframe embed-responsive-item" src="http://docs.google.com/gview?url=http://www.robkeleher.com/assets/docs/Resume__Rob_Keleher.pdf&amp;embedded=true" frameborder="0">
+    <div id="pdf_spinner" class="text-center">
+        <div class="spinner-border text-light" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <iframe onload="resumeIFrameLoaded();" id="pdf_iframe" class="embed-responsive-item" src="https://docs.google.com/gview?url=https://www.robkeleher.com/assets/docs/Resume__Rob_Keleher.pdf&amp;embedded=true" frameborder="0">
     </iframe>
 </div>
 
