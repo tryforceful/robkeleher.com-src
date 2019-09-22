@@ -4,3 +4,4 @@
 vendor/bundle
 ~~THEME_FILE_DEFAULTS
 unused
+node_modules

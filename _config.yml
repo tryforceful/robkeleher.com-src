@@ -50,7 +50,19 @@ plugins:
 #source: .
 #destination: ./_site
 #includes_dir: _includes
-exclude: ["deploy.sh", "unused", "Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
+exclude: 
+  - webpack.config.js
+  - deploy.sh
+  - unused
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - package.json
+  - yarn.lock
 
 sass:
   style: compressed
