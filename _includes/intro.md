@@ -1,9 +1,6 @@
 <h1 class="mb-3">
-<div id="introtext">Hello, World! I'm Rob.</div>
-<div id="introtext_small">
-    <div id="introtext_small_1">Hello, World!</div>
-    <div id="introtext_small_2">I'm Rob.</div>
-</div>
+<div id="introtext_small_1">Hello, World!<span>&nbsp;</span></div>
+<div id="introtext_small_2">I'm Rob.<span>&nbsp;</span></div>
 </h1>
 <div class="d-block d-sm-none coverimage"><img class="img-fluid" src="assets/images/cover.jpg"/></div>
 

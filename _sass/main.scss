@@ -1,7 +1,6 @@
 @import '_variables';
 @import '_mixins';
 
-
 //override img craziness
 .img-themed {
   padding: 5px;
@@ -25,7 +24,6 @@ html {
   z-index: 1500;
   background: url(../images/blacktocat.png) $navi_and_forkme_bg no-repeat 95% 50%;
 }
-
 
 div {
   vertical-align: unset;
@@ -319,7 +317,7 @@ a.badge-dark.userscript_badge {
       top 0.5s ease,
       height 0.5s ease;
   }
-  @media (max-width: 450px) {
+  @media (max-width: 470px) {
     z-index: 0;
     opacity: .125;
     transition: opacity 0.5s ease;
@@ -538,9 +536,6 @@ footer {
 
 
 #linkedin_container {
-  // .LI-badge-container { 
-  //   background-color: white;
-  // }
   margin-top: 40px;
   margin-bottom: 20px;
   width: auto;
@@ -568,26 +563,6 @@ footer {
 
 // color: #6f42c1;
 // color: #6f42c1;
-
-// --blue: #007bff;
-// --indigo: #6610f2;
-// --purple: #6f42c1;
-// --pink: #e83e8c;
-// --red: #dc3545;
-// --orange: #fd7e14;
-// --yellow: #ffc107;
-// --green: #28a745;
-// --teal: #20c997;
-// --cyan: #17a2b8;
-// --white: #fff;
-// --gray: #6c757d;
-// --gray-dark: #343a40;
-// --primary: #007bff;
-// --secondary: #6c757d;
-// --success: #28a745;
-// --info: #17a2b8;
-// --warning: #ffc107;
-// --danger: #dc3545;
 }
 
 #main_content section {
@@ -614,73 +589,34 @@ footer {
   }
 }
 
-
-@media (max-width: 400px)
+#introtext_small_1,
+#introtext_small_2
 {
-  #introtext {
-    display: none;
-  }
-  #introtext_small {
-    display: inline-block;
-  }
-}
-@media (min-width: 400px)
-{
-  #introtext {
-    display: inline-block;
-  }
-  #introtext_small {
-    display: none;
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+
+  span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: $gray-background;
+    width: 100%;
+    border-left: .1em solid transparent; //transparent to start, animations will override
   }
 }
 
-@keyframes typing { from { width: 0; } 52% {width: calc(21.25ch / 22 * 13); animation-timing-function: linear} 64% {width: calc(21.25ch / 22 * 13); animation-timing-function: steps(9,end);} to {width: 21.25ch;} }
-@keyframes typing1 { from { width: 0; } to {width: 12.25ch;} }
-@keyframes typing2 { from { width: 0; } to {width: 7.8ch; } }
-@keyframes blink-caret { 50% { border-color: transparent; } }
-@keyframes blink-caret-reverse { from, to { border-color: transparent; } 50% { border-color: $gray-background-font-color; } }
-
-
-#introtext {
-	//font: bold 100% Consolas, Monaco, monospace;
-	border-right: .1em solid $gray-background-font-color;
-	width: 16.1em;
-	white-space: nowrap;
-	overflow: hidden;
-  animation:  typing 1.5s steps(13, end) 1s both, 
-              blink-caret .5s step-end infinite alternate;
+@keyframes typing1 { from { width: 100%; } to {width: 0; } }
+@keyframes typing2 { from { width: 100%; } to {width: 0; } }
+@keyframes blink-caret { from, to { border-color: $gray-background-font-color; } 50% { border-color: transparent; } }
+@keyframes blink-caret-reverse { 50% { border-color: $gray-background-font-color; } }
+  
+#introtext_small_1 span {
+  animation:  typing1 1s steps(13, end) 1.5s forwards,
+              blink-caret-reverse 1s step-end 3;
 }
-
-#introtext_small {
-  #introtext_small_1 {
-    border-right: .1em solid $gray-background-font-color;
-    width: 12.25ch;
-    white-space: nowrap;
-    overflow: hidden;
-    animation:  typing1 0.7s steps(13, end) 1s backwards,
-                blink-caret .5s step-start 4 alternate forwards;
-  }
-  #introtext_small_2 {
-    border-right: .1em solid $gray-background-font-color;
-    width: 7.8ch;
-    white-space: nowrap;
-    overflow: hidden;
-    animation:  typing2 0.5s steps(8, end) 2.0s both, 
-                blink-caret-reverse .5s step-end infinite both alternate 2.0s;
-  }
+#introtext_small_2 span {
+  animation:  typing2 .8s steps(8, end) 3s both,
+              blink-caret-reverse 1s step-end infinite 3s;
 }
-
-// .blinking-cursor {
-//   font-weight: 100;
-//   vertical-align: text-bottom;
-//   @include animation(1s blink step-end infinite);
-// }
-
-// @keyframes "blink" {
-//   from, to {
-//     color: transparent;
-//   }
-//   50% {
-//     color: black;
-//   }
-// }
