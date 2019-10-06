@@ -2,7 +2,15 @@
 <div id="introtext_small_1">Hello, World!<span>&nbsp;</span></div>
 <div id="introtext_small_2">I'm Rob.<span>&nbsp;</span></div>
 </h1>
-<div class="d-block d-sm-none coverimage"><img class="img-fluid" src="assets/images/cover.jpg"/></div>
+<div class="d-block d-sm-none coverimage">
+    <img class="img-fluid" srcset="
+            assets/images/cover-4x.jpg 3840w,
+            assets/images/cover-3x.jpg 2880w,
+            assets/images/cover-2x.jpg 1920w,
+            assets/images/cover-1x.jpg 960w"
+        sizes="100vw"
+        src="assets/images/cover.jpg"/>
+</div>
 
 I am a senior Software and Web Developer with experience in frontend & full-stack development, project leadership and team leadership in the software industry. I have been responsible for critical products that have enhanced the experiences of tens of thousands of users. I have worked in team environments both large and small, for companies from a dozen to thousands of employees, following Agile/Scrum development principles as a certified Scrummaster. I strive to find and effect elegant solutions to technical problems as both a developer and a leader. I am also passionate about Japanese language, culture, and foreign exchange with 2 years of experience living and working in Japan as an English teacher.
 

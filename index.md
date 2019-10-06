@@ -10,7 +10,15 @@ canonical_url: http://www.robkeleher.com
         {% capture include__intro %}{% include intro.md %}{% endcapture %}
         {{ include__intro | markdownify }}
         </div>
-        <div class="d-none d-sm-block coverimage"><img class="img-fluid" src="assets/images/cover.jpg"/></div>
+        <div class="d-none d-sm-block coverimage">
+            <img class="img-fluid" srcset="
+                assets/images/cover-4x.jpg 3840w,
+                assets/images/cover-3x.jpg 2880w,
+                assets/images/cover-2x.jpg 1920w,
+                assets/images/cover-1x.jpg 960w"
+            sizes="100vw"
+            src="assets/images/cover.jpg"/>
+        </div>
     </section>
     <section id="_about" class="outer dark-section">
         <a class="section-anchor" id="about"></a>

@@ -457,6 +457,17 @@ a.badge-dark.userscript_badge {
 }
 
 #_about {
+  @media (min-width: $-breakpoint-sm) {
+    .row:not(:last-of-type) {
+      margin-bottom: 40px;
+    }
+  }
+  @media (min-width: $-breakpoint-md) {
+    .row:not(:last-of-type) {
+      margin-bottom: 60px;
+    }
+  }
+
   .interests {
     list-style-type: none;
     @media (max-width: $-breakpoint-sm){
