@@ -32,7 +32,7 @@ social:
 
 # for Jekyll theme
 show_downloads: false
-google_analytics:
+google_analytics: UA-149488863-1
 theme: jekyll-theme-slate
 
 bootstrap:

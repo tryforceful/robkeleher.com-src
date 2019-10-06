@@ -29,9 +29,13 @@ div {
   vertical-align: unset;
 }
 
-//needed for nav scrollspy
 body {
+  //needed for nav scrollspy
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 $font-family-sans: 'Source Sans Pro', sans-serif;
@@ -129,6 +133,7 @@ a.badge-dark.userscript_badge {
 }
 
 #main_content_wrap {
+  flex: 1;
   overflow-x: hidden;
   border-top: 0;
   background-color: $gray-background;
