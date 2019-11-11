@@ -42,8 +42,10 @@
   name: Node.js
 # - icon: fab fa-node
 #   name: Test
-- icon: fas fa-gem
-  name: Ruby
+# - icon: fas fa-gem
+#   name: Ruby
+- icon: fab fa-python
+  name: Python
 - icon: fab fa-sass
   name: Sass
 - icon: fab fa-slack
