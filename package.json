@@ -1,6 +1,6 @@
 {
   "name": "tryforceful.com-src",
-  "version": "2.0",
+  "version": "2.0.1",
   "description": "Source code for tryforceful.com and robkeleher.com",
   "main": "_site/index.html",
   "private": true,
@@ -19,6 +19,7 @@
     "webpack-cli": "^3.3.9"
   },
   "dependencies": {
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "bootstrap": "4.3.1"
   }
 }

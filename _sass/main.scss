@@ -132,6 +132,19 @@ a.badge-dark.userscript_badge {
   // }
 }
 
+
+a.badge-dark.ionic_badge {
+  font-family: $font-family-mono;
+
+  &, &:visited {
+    background-color: #178ab8;
+    color: #ddd;//#f0a;
+  }
+  &:hover, &:focus {
+    color: #fff;
+  }
+}
+
 #main_content_wrap {
   flex: 1;
   overflow-x: hidden;
@@ -571,11 +584,11 @@ footer {
     font-size: 100px;
   }
 
-  .icon-color-1 {color: #dd535f;}
-  .icon-color-2 {color: #d4ad00;}
-  .icon-color-3 {color: #28a745;}
-  .icon-color-4 {color: #178ab8;}
-  .icon-color-5 {color: #6f42c1;}
+  .icon-color-1 {color: #dd535f; svg {fill: #dd535f;}}
+  .icon-color-2 {color: #d4ad00; svg {fill: #d4ad00;}}
+  .icon-color-3 {color: #28a745; svg {fill: #28a745;}}
+  .icon-color-4 {color: #178ab8; svg {fill: #178ab8;}}
+  .icon-color-5 {color: #6f42c1; svg {fill: #6f42c1;}}
 
 // color: #6f42c1;
 // color: #6f42c1;

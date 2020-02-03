@@ -9,6 +9,13 @@ title: Projects
 # Projects
 > See more of my work on <a href="http://www.github.com/tryforceful"><i class="fab fa-github"></i> GitHub</a>.
 
+### [Kanji Guesser App](http://kanji-guesser.netlify.com/)
+{% include ionic.html %} Kanji Guesser is an Ionic 4 React cross-platform app that assists Japanese language learners with kanji recognition and retention. It prompts the user with a series of flashcards where they must choose the correct kanji character from a set of similar-looking ones.
+
+**[Try it live here!](http://kanji-guesser.netlify.com/)**
+
+<img class="project_image d-block mx-auto img-fluid" style="max-height:500px;" src="assets/images/kanji-guesser-screencap_2.png">
+
 ### [WaniKani Enhanced Mobile Design](https://gist.github.com/tryforceful/ff2c36baddf2a5029aa1cf03215d7880#file-tryf-wk-enhnaced-mobile-css-userscript-js)
 {% include userscript.html %} Overwrites existing mobile viewport CSS stylings of [wanikani.com](http://www.wanikani.com) in review and lesson mode, making the site more mobile-friendly.
 

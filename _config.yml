@@ -1,6 +1,6 @@
 # collections:
-  # authors:
-  #   output: true
+# authors:
+#   output: true
 
 defaults:
   # - scope:
@@ -50,13 +50,14 @@ plugins:
 #source: .
 #destination: ./_site
 #includes_dir: _includes
-exclude: 
+exclude:
   - webpack.config.js
   - deploy.sh
   - unused
   - Gemfile
   - Gemfile.lock
   - node_modules
+  - README.md
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
