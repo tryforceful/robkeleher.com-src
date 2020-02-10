@@ -9,7 +9,7 @@ title: Projects
 # Projects
 > See more of my work on <a href="http://www.github.com/tryforceful"><i class="fab fa-github"></i> GitHub</a>.
 
-### [Kanji Guesser App](http://kanji-guesser.netlify.com/)
+### [Kanji Guesser App](http://www.github.com/tryforceful/kanji-guesser)
 {% include ionic.html %} Kanji Guesser is an Ionic 4 React cross-platform app that assists Japanese language learners with kanji recognition and retention. It prompts the user with a series of flashcards where they must choose the correct kanji character from a set of similar-looking ones.
 
 **[Try it live here!](http://kanji-guesser.netlify.com/)**
