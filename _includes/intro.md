@@ -12,6 +12,6 @@
         src="assets/images/cover.jpg"/>
 </div>
 
-I'm a senior full-stack software engineer, web developer, project owner, and team leader with a focus on intelligent design. I've worked on projects of all sizes, from SPAs to full-scale enterprise software servicing more than 16,000 users. I am also an avid fan of Japanese language, culture, and foreign exchange with 2 years of experience working in Japan as an English teacher.
+I'm a senior full-stack software engineer, web developer, project owner, and team leader with a focus on intuitive design. I've worked on projects of all sizes, from SPAs to full-scale enterprise software servicing more than 16,000 users. I am also an avid fan of Japanese language, culture, and foreign exchange with 2 years of experience working in Japan as an English teacher.
 
 Check out some of my [projects](#projects) on GitHub or my [résumé](#resume).
